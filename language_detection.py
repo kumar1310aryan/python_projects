@@ -1,7 +1,6 @@
 from langdetect import detect
 from langdetect.lang_detect_exception import LangDetectException
 
-
 LANGUAGE_MAP = {
     'af': 'Afrikaans',
     'ar': 'Arabic',
@@ -62,15 +61,13 @@ LANGUAGE_MAP = {
 
 def detect_language(text):
     try:
-       
         lang_code = detect(text)
-        
-        language = LANGUAGE_MAP.get(lang_code, "Unknown")
+         language = LANGUAGE_MAP.get(lang_code, "Unknown")
         return language
     except LangDetectException:
         return "Unknown"
 
-
-text = "हिन्दी  लिखने के समान सहज है"  
-language = detect_language(text)
-print("Detected language:", language)
+if __name__ == "__main__":
+     user_text = input("Please enter the text you want to detect the language of: ")
+    detected_language = detect_language(user_text)
+    print("Detected language:", detected_language)
