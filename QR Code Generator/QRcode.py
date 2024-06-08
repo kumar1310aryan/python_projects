@@ -1,13 +1,10 @@
 import qrcode
 
-# Example data (you can replace this with your own content)
 data = "Hello, World"
 
-# Output file name
+# Output file
 filename = "my_qr_code.png"
 
-# Generate the QR code
 img = qrcode.make(data)
 
-# Save the image to a file
 img.save(filename)
