@@ -1,4 +1,4 @@
-
+import random
 
 def hangman():
     words = ["python", "programming", "hangman", "computer", "code"]
