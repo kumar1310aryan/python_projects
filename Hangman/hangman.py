@@ -1,7 +1,7 @@
 import random
 
 def hangman():
-    common_words = [
+    words = [
     "apple", "banana", "house", "car", "tree", "book", "chair", "table", "dog", "cat",
     "ball", "phone", "computer", "pencil", "paper", "window", "door", "bed", "lamp", "clock",
     "bread", "milk", "cheese", "coffee", "tea", "water", "juice", "egg", "rice", "pasta",
