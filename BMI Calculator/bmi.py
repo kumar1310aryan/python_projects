@@ -1,5 +1,5 @@
 def calculate_bmi(weight, height_cm):
-    height_m = height_cm / 100  # Convert height to meters
+    height_m = height_cm / 100 
     try:
         bmi = weight / (height_m ** 2)
         return bmi
